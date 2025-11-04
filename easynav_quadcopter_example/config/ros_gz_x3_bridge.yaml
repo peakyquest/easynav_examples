@@ -28,6 +28,14 @@
   ros_type_name: "sensor_msgs/msg/CameraInfo"
   gz_type_name: "ignition.msgs.CameraInfo"
   direction: GZ_TO_ROS
+
+
+- ros_topic_name: "/gps/fix"
+  gz_topic_name: "/world/default/model/x3/link/X3/base_link/sensor/navsat/navsat"
+  ros_type_name: "sensor_msgs/msg/NavSatFix"
+  gz_type_name: "gz.msgs.NavSat"
+  direction: GZ_TO_ROS
+
   
 - ros_topic_name: "/odom"
   gz_topic_name: "/model/x3/odometry"
@@ -40,3 +48,6 @@
   ros_type_name: "tf2_msgs/msg/TFMessage"
   gz_type_name: "gz.msgs.Pose_V"
   direction: GZ_TO_ROS
+
+
+

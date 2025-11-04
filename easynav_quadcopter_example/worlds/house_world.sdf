@@ -22,6 +22,17 @@
         <!-- Sensors -->
         <plugin filename="ignition-gazebo-imu-system" name="ignition::gazebo::systems::Imu"> </plugin>
         <plugin filename="ignition-gazebo-magnetometer-system" name="ignition::gazebo::systems::Magnetometer"> </plugin>
+        <plugin filename="ignition-gazebo-navsat-system" name="ignition::gazebo::systems::NavSat"> </plugin>
+
+        <!-- Estimated latitude/longitude of MIT Sailing from satellite imagery -->
+        <spherical_coordinates>
+        <surface_model>EARTH_WGS84</surface_model>
+        <world_frame_orientation>ENU</world_frame_orientation>
+        <latitude_deg>42.35821841111111</latitude_deg>
+        <longitude_deg>-71.0479235555555</longitude_deg>
+        <elevation>0.0</elevation>
+        <heading_deg>0.0</heading_deg>
+        </spherical_coordinates>
 
         <!-- To add realistic gravity, do: 0.0 0.0 -9.8, otherwise do 0.0 0.0 0.0 -->
         <gravity>0.0 0.0 -9.8</gravity>
